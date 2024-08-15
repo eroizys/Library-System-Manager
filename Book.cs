@@ -5,15 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-//namespace Library_System_Manager
-//{
     public class Book
     {
+        //Declaring Book Variables
         public string Title { get; set; }
         public string Author { get; set; }
         public string ISBN { get; set; }
         private int copiesAvailable;
-
 
         public Book(string title, string author, string iSBN, int copiesAvailable)
         {
@@ -66,5 +64,4 @@ using System.Xml.Linq;
             Console.WriteLine($"Title: {Title}, Author: {Author}, ISBN: {ISBN}, Available Copies: {CopiesAvailable}");
         }
 
-   // }
 }
