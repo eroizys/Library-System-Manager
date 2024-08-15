@@ -43,7 +43,7 @@ using System.Xml.Linq;
         {
             if (copies > 0)
             {
-                copiesAvailable += copies;
+                CopiesAvailable += copies;
             } else
             {
                 Console.WriteLine("Cannot add the entered Number");
@@ -52,13 +52,13 @@ using System.Xml.Linq;
 
         public void removeCopies(int copies)
         {
-            if (copies < copiesAvailable)
+            if (copies <= CopiesAvailable)
             {
-                copiesAvailable += copies;
+                CopiesAvailable -= copies;
             }
             else
             {
-                Console.WriteLine("Cannot add the entered number of books");
+                Console.WriteLine("Cannot remove the entered number of books");
             }
         }
 
